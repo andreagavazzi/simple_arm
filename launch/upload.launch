@@ -1,0 +1,4 @@
+<launch>
+  <!-- Robot description -->
+  <param name="robot_description" command="cat $(find simple_arm)/urdf/simple_arm.urdf" />
+</launch>

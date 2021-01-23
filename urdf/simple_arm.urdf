@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="simple_arm">
+
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://simple_arm/meshes/base_link.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="servo_1_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="servo_2_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.021"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.197" lower="-1.9" upper="1.9" velocity="0.0"/>
+  </joint>
+
+  <link name="servo_2_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.021"/>
+      <geometry>
+        <mesh filename="package://simple_arm/meshes/servo_2.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="servo_2_joint" type="revolute">
+    <parent link="servo_2_link"/>
+    <child link="servo_3_link"/>
+    <origin rpy="0 0 3.14159" xyz="0 0 0.0624"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5.197" lower="-1.57079632679" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+
+  <link name="servo_3_link">
+    <visual>
+      <origin rpy="0 0 3.14159" xyz="0 0 -0.0834"/>
+      <geometry>
+        <mesh filename="package://simple_arm/meshes/servo_3.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="servo_3_joint" type="revolute">
+    <parent link="servo_3_link"/>
+    <child link="servo_4_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.068"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="5.197" lower="-1.57079632679" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+
+  <link name="servo_4_link">
+    <visual>
+      <origin rpy="0 0 3.14159" xyz="0 0 -0.1514"/>
+      <geometry>
+        <mesh filename="package://simple_arm/meshes/servo_4.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="gripper_joint" type="revolute">
+    <parent link="servo_4_link"/>
+    <child link="gripper_link"/>
+    <origin rpy="0 0 3.14159" xyz="0 0.0145 0.0455"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="5.197" lower="-1.57079632679" upper="1.57079632679" velocity="0.0"/>
+  </joint>
+
+  <link name="gripper_link">
+  </link>
+
+</robot>

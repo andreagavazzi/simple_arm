@@ -1,0 +1,13 @@
+port: /dev/ttyUSB0
+rate: 50
+joints: {
+    servo_1_joint: {id: 1},
+    servo_2_joint: {id: 2},
+    servo_3_joint: {id: 3},
+    gripper_joint: {id: 4}
+
+}
+
+controllers: {
+    arm_controller: {type: follow_controller, joints: [servo_1_joint, servo_2_joint, servo_3_joint, gripper_joint],  action_name: arm_controller/follow_joint_trajectory, onboard: False }
+}

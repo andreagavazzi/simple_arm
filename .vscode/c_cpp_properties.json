@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/andrea/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/andrea/catkin_ws/src/DynamixelSDK/ros/dynamixel_sdk/include/**",
+        "/home/andrea/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_controllers/include/**",
+        "/home/andrea/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_operators/include/**",
+        "/home/andrea/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/empty_controller/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_control_extensions/hardware_interface_extensions/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/integer_controllers/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_control_extensions/joint_limits_interface_extensions/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/joint_space_controllers/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/layered_hardware/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/layered_hardware_dynamixel/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/layered_hardware_extensions/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/posvel_controllers/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/posveleff_controllers/include/**",
+        "/home/andrea/catkin_ws/src/reachy_robot/reachy_bringup/include/**",
+        "/home/andrea/catkin_ws/src/reachy_robot/reachy_description/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/sensor_state_controllers/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_controllers_extensions/task_space_controllers/include/**",
+        "/home/andrea/catkin_ws/src/layered_dynamixel/ros_control_extensions/transmission_interface_extensions/include/**",
+        "/home/andrea/catkin_ws/src/usb_cam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

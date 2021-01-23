@@ -1,0 +1,5 @@
+<launch>
+  <node name="arbotix_driver" pkg="arbotix_python" type="arbotix_driver" output="screen">
+    <rosparam file="$(find simple_arm)/config/simple_arm.yaml" command="load" />
+  </node>
+</launch>
